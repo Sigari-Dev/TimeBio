@@ -6,7 +6,7 @@
 # نوشته شده با زبان #پایتون و لایبری #تلتون
 
 # برای استفاده فایل زیر دانلود کنید و بریزید داخل سرور و دستورات زیر به تریب بزنید
-# unzip timebio.zip
+# git clone https://github.com/Sigari-Dev/TimeBio
 # cd timebio
 # pip3 install telethon
 # pip3 install Pillow

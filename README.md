@@ -7,7 +7,7 @@
 
 # برای استفاده سورس تو سرورتون کلون کنید با دستور زیر
 # git clone https://github.com/Sigari-Dev/TimeBio
-# cd timebio
+# cd TimeBio
 # pip3 install telethon
 # pip3 install Pillow
 # و در اخر مشخصات خاسته شده داخل فایل main.py جایگزاری کنید و در اخر هم سورس ران کنید حالش ببرید

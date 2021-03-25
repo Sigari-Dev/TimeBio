@@ -2,29 +2,26 @@
   "name": "TimeBio",
   "description": "Auto Changer Profile",
   "repository": "https://github.com/Sigari-Dev/TimeBio",
-  "keywords": ["python", "telethon", "telegram", "userbot"],
   "logo": "https://avatars.githubusercontent.com/u/58165188?s=460&u=74da66bb4d67fcd19737ec7929a9f5d4a1314dbb&v=4",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "python",
+    "telethon",
+  ],
   "stack": "container",
   "env": {
-      "TELETHON_SESSION": {
-          "required": true,
-          "value": "",
-          "description": "The session string Login to your account"
-      },
-      "BIO": {
-          "required": true,
-          "value": "",
-          "description": "Set up your account biography"
-      },
-      "َAPI_ID": {
-          "required": true,
-          "value": "en",
-          "description": "Set up your api id"
-      },
-      "API_HASH": {
-          "required": true,
-          "value": "",
-          "description": "Set up your api hash"
-}
-}
+    "API_ID": {
+            "description": "api_id part of your Telegram API Key from my.telegram.org/apps",
+            "required": true
+    },
+    "API_HASH": {
+            "description": "api_hash part of your Telegram API Key from my.telegram.org/apps",
+            "required": true
+    },
+    "SESSION_STRING": {
+            "description": "Session string, Account Stirring Enter your account",
+            "required": true
+    }
+  }
 }

@@ -3,10 +3,11 @@ from telethon.sync import TelegramClient
 from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotosRequest
 from telethon.tl.functions.account import UpdateProfileRequest
 from telethon.tl.functions.channels import JoinChannelRequest
+from telethon.sessions import StringSession
 from PIL import Image, ImageFont, ImageDraw
 from random import choice
 from datetime import datetime
-import time, base64
+import time, base64, os
 """
 قسمت پایین حتما پر کنید
 برای گرفتن موارد زیر به سایت https://my.telegram.org/
@@ -19,9 +20,9 @@ api_hash , api_id
 @Sigaris
 """
 ################################################################################
-api_id = 0000000 # ایدی مخصوص اکانت خودتون قرار بدید
-api_hash = "000000" #هش مخصوص اکانت خودتون قرار بدید
-bio = "BY @Sigaris" #اینجا چیزی که میخاید تو بیوتون قرار بگیره رو بنویسید
+api_id = int(os.environ.get("API_ID"))
+api_hash = os.environ.get("API_HASH")
+bio = os.environ.get("BIO")
 ################################################################################
 def number(number):
     number = number.replace('0', '⁰')
@@ -54,7 +55,7 @@ def generateimage(text):
 
 def main():
     set_time = ''
-    with TelegramClient('Time&Bio', api_id, api_hash) as client:
+    with TelegramClient(StringSession(os.environ.get("SESSION_STRING")), api_id, api_hash) as client:
         print('Run Time & Bio ...')
         while True:
             if not set_time == gettime():

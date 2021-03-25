@@ -22,6 +22,10 @@
     "SESSION_STRING": {
             "description": "Session string, Account Stirring Enter your account",
             "required": true
+    },
+    "BIO": {
+            "description": "Set up your bio",
+            "required": true
     }
   }
 }

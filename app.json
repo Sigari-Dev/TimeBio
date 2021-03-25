@@ -7,7 +7,7 @@
     "telegram",
     "userbot",
     "python",
-    "telethon",
+    "telethon"
   ],
   "stack": "container",
   "env": {

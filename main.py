@@ -48,7 +48,7 @@ def generateimage(text):
     image.load()
     W, H = image.size
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype(font='data/font.ttf', size=180)
+    font = ImageFont.truetype(font='data/font.ttf', size=170)
     wt, ht = draw.textsize(text, font=font)
     draw.text(((W - wt) / 2, (H - ht) / 2 ), text, font=font, fill=choice(["#00c7a4","#0071c7","#c7a200","#728593","#943633","#6495ed","#43f70a","#e1b2ae","#527130","#629f5d","#3d4e90","#9a9ec4",]))
     image.save('data/time_image.jpg')
